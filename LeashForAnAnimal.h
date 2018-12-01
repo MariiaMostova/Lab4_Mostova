@@ -1,36 +1,35 @@
 ﻿#pragma once
 #include "pch.h"
-#include <iostream>
 #include <string>
 
-class Leash_for_an_animal
+class LeashForAnAnimal
 {
 private:
 	string manufactorer;
-	int max_length;
-	int max_masa;
+	int maxLenght;
+	int maxMasa;
 	string color;
 public:
 	string getManufactorer();
-	int getMax_length();
-	int getMax_masa();
+	int getMaxLenght();
+	int getMaxMasa();
 	string getColor();
 	string getPetName();
 	string getMatterial();
 	double diametr;
 	string pet;
-	Leash_for_an_animal() {
+	LeashForAnAnimal() {
 		manufactorer = "Mary";
-		max_length=4;
-		max_masa = 15; 
+		maxLenght=4;
+		maxMasa = 15; 
 		color="red";
 		diametr = 15.2;
 		pet="dog";
 		petName = "Jony";
 		matterial = "leather";
 	};
-	Leash_for_an_animal(string manufactorer, int max_length, int max_masa, string color, double diametr, string petName, string pet, string matterial);
-	~Leash_for_an_animal();
+	LeashForAnAnimal(string manufactorer, int maxLenght, int maxMasa, string color, double diametr, string petName, string pet, string matterial);
+	~LeashForAnAnimal();
 protected:
 	string petName;
 	string matterial;
